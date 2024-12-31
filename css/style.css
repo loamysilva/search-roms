@@ -1,0 +1,107 @@
+/* Tema Claro (Padrão) */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4; /* Cor do fundo para tema claro */
+  color: #333; /* Cor do texto para tema claro */
+  flex-direction: column; /* Adiciona a direção vertical para alinhar os elementos em coluna */
+}
+
+/* Estilos do logotipo */
+.search-logo {
+  width: 1000px;
+  height: auto;
+  margin-bottom: 20px; /* Ajuste a margem para separar o logo da barra de pesquisa */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Estilo do formulário de pesquisa */
+form {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Caixa de pesquisa */
+.search-box {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Estilo do botão de pesquisa */
+.search-button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilo para os botões "Mudar Tema" e "Me Surpreenda" */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px; /* Espaçamento entre os botões */
+  flex-grow: 1; /* Faz os botões crescerem igualmente */
+  max-width: 180px; /* Limita a largura dos botões */
+}
+
+/* Efeito de hover para os botões */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o botão de tema e "Me Surpreenda" */
+.luz {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Adiciona espaço acima dos botões */
+}
+
+button.dark-mode {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Tema Escuro */
+body.dark-mode {
+  background-color: #000000; /* Cor do fundo para tema escuro */
+  color: #f4f4f4; /* Cor do texto para tema escuro */
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+

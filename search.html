@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="search-container">
+        <img src="img/romslogo.png" alt="logo" class="search-logo">
+        <form action="resultados.php" method="get">
+            <input type="text" name="q" class="search-box" placeholder="Pesquisar...">
+            <button type="submit" class="search-button">🔍</button>
+        </form>
+    </div>
+    <div class="luz">
+        <button id="toggle-theme" onclick="toggleTheme()">Mudar Tema</button>
+
+        <button id="iamlucky" onclick="surpriseMe()">Me Surpreenda</button>
+    </div>
+    
+    <script src="js/script.js" defer></script>
+</body>
+</html>
